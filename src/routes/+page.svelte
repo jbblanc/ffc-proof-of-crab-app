@@ -1,18 +1,25 @@
-<h1>Welcome to Proof of crab</h1>
+<script>
+	import Button from '../components/Button.svelte';
+	import { env } from '$env/dynamic/public';
+</script>
 
-<div class="card bg-base-100 w-96 shadow-xl">
-	<figure>
-		<img src="https://daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg" alt="Shoes" />
-	</figure>
-	<div class="card-body">
-		<h2 class="card-title">Shoes!</h2>
-		<p>If a dog chews shoes whose shoes does he choose?</p>
-		<div class="card-actions justify-end">
-			<button class="btn btn-primary">Buy Now</button>
+<div class="hero bg-neutral min-h-screen" data-theme="night">
+	<div class="hero-content flex-col lg:flex-row">
+		<img
+			src="https://jopwkvlrcjvsluwgyjkm.supabase.co/storage/v1/object/public/poc-images/GrabHome.png"
+			class="max-w-sm rounded-lg shadow-2xl"
+			alt="Proof of Crab"
+		/>
+		<div>
+			<h1 class="text-5xl font-bold">Discover Proof of Crab</h1>
+			<p class="py-6">
+				Proof of Crab is a farcaster frame to check Proof of Humanity and deliver Proof tokens.
+			</p>
+			<Button
+				label="Get started in Warpcast !"
+				href="https://warpcast.com/~/compose?embeds[]={env.PUBLIC_FRAME_URL}/api"
+			/>
+			<Button style="secondary" label="Check crabs from genesis frame" href="/frames" />
 		</div>
 	</div>
-</div>
-
-<div class="bg-red-500">
-	<p>Visit <a href="https://kit.svelte.dev">kit.svelte.dev</a> to read the documentation</p>
 </div>
