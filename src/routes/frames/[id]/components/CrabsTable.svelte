@@ -17,7 +17,7 @@
 <div class="overflow-x-auto">
 	<table class="table">
 		<!-- head -->
-		<thead class="text-secondary font-bold">
+		<thead class="text-secondary text-xl font-bold">
 			<tr>
 				<th>Crab</th>
 				<th>Challenged on</th>
