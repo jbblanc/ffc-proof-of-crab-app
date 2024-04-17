@@ -8,7 +8,7 @@
 	export let phosphorItem: any;
 </script>
 
-<div class="grid w-full sm:grid-cols-3 space-x-20">
+<div class="grid w-full sm:grid-cols-3 sm:space-x-20">
 	<div class="p-3">
 		<div class="mt-3 text-xl font-bold">
 			{frame.name}
@@ -33,7 +33,7 @@
 			</div>
 		</div>
 	</div>
-	<div class="flex flex-col space-y-5 p-10">
+	<div class="flex flex-col space-y-5 p-4 sm:p-10">
 		<Button
 			label="Re-Cast in Warpcast"
 			href="https://warpcast.com/~/compose?embeds[]={env.PUBLIC_FRAME_URL}/api/proof-of-crab/{frame.id}"
@@ -109,10 +109,10 @@
 			</svelte:fragment>
 		</Button>
 	</div>
-	<div class="p-3">
+	<div class="p-3 flex flex-col items-center">
 		<div>
 			<img src={phosphorItem?.media.image.thumb} alt="proof of crab" class="rounded-badge" />
 		</div>
-		<div class="text-center sm:mt-2">{phosphorItem?.attributes.title}</div>
+		<div class=" sm:mt-2">{phosphorItem?.attributes.title}</div>
 	</div>
 </div>

@@ -11,13 +11,11 @@
 
 <div class="sm:main-layout main-layout-mobile bg-neutral min-h-screen" data-theme="night">
 	<Header />
-
 	<div class="text-neutral-content flex w-full justify-center pb-5">
 		<div class="flex w-full justify-center px-3 sm:w-4/5 sm:px-0">
 			<slot />
 		</div>
 	</div>
-
 	<Footer />
 </div>
 
