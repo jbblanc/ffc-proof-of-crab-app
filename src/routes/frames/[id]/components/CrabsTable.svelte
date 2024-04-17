@@ -29,7 +29,7 @@
 						</div>
 						<div>
 							<div class="font-bold">{crab.user?.display_name}</div>
-							<div class="text-sm opacity-75">{crab.user?.username}</div>
+							<div class="text-sm opacity-75">&#64;{crab.user?.username}</div>
 						</div>
 					</div>
 					<div class="text-xs italic opacity-50">
@@ -76,7 +76,7 @@
 								</div>
 								<div>
 									<div class="font-bold">{crab.user?.display_name}</div>
-									<div class="text-sm opacity-50">{crab.user?.username}</div>
+									<div class="text-sm opacity-50">&#64;{crab.user?.username}</div>
 								</div>
 							</div>
 						</td>
