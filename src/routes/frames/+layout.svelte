@@ -1,6 +1,7 @@
 <script lang="ts">
 	import Footer from '../../components/Footer.svelte';
 	import Header from '../../components/Header.svelte';
+	import OpenGraph from '../../components/OpenGraph.svelte';
 	import { media } from '../../stores/media';
 
 	let windowWidth: number;
@@ -8,6 +9,8 @@
 </script>
 
 <svelte:window bind:innerWidth={windowWidth} />
+
+<OpenGraph />
 
 <div class="sm:main-layout main-layout-mobile bg-neutral min-h-screen" data-theme="night">
 	<Header />
