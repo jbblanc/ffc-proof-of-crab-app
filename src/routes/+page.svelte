@@ -18,7 +18,7 @@
 				Proof of Crab uses farcaster frames to check Proof of Humanity and deliver Soulbound Proof
 				tokens.
 			</p>
-			<div class="flex flex-col space-y-2 sm:flex-row sm:space-y-0">
+			<div class="flex flex-col space-y-2 sm:flex-row sm:space-y-0 sm:space-x-2">
 				<Button
 					label="Get started in Warpcast !"
 					href="https://warpcast.com/~/compose?embeds[]={env.PUBLIC_FRAME_URL}/api"
