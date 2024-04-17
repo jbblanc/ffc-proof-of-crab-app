@@ -1,10 +1,22 @@
-# ffc-proof-of-crab-app
+# Proof of Crabs (web application)
 
 Web application to monitor the Proof of Crab frames
 
+This repository is associated to a farcaster frames application that can be accessed at https://github.com/jbblanc/ffc-proof-of-crab-frames
+
+## Accessing official version
+
+Head to [Proof of Crab](https://ffc-proof-of-crab-app.vercel.app)
+
+This app uses a [Supabase](https://supabase.com/) backend and runs with [Vercel](https://vercel.com/).
+
 ## Running locally
 
-Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
+### Important note
+
+This app requires a supabase application to run locally. This part of the application is not shared at the moment.
+
+Once you've cloned the repo and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
 
 ```bash
 npm run dev
@@ -20,7 +32,3 @@ To create a production version of your app:
 ```bash
 npm run build
 ```
-
-You can preview the production build with `npm run preview`.
-
-> To deploy your app, you may need to install an [adapter](https://kit.svelte.dev/docs/adapters) for your target environment.
