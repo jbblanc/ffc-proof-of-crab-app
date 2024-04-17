@@ -8,5 +8,8 @@
 
 <div class="w-full">
 	<FrameOverview frame={data.frame} phosphorItem={data.phosphorItem} />
+
+	<div class="divider text-xl">Crabs for this challenge</div>
+
 	<CrabsTable crabs={data.crabs} />
 </div>

@@ -48,7 +48,7 @@
 					</td>
 					<td>{crab.has_minted_proof}</td>
 					<th>
-						<button class="btn btn-ghost btn-xs">view tx</button>
+						<a class="btn btn-ghost btn-xs" href="https://lineascan.build/tx/">view tx</a>
 					</th>
 				</tr>
 			{/each}

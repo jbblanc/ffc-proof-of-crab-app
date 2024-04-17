@@ -24,7 +24,7 @@
 <style>
 	.main-layout {
 		display: grid;
-		grid-template-rows: 4.5rem auto 6rem;
+		grid-template-rows: 5.5rem auto 6rem;
 	}
 	.main-layout-mobile {
 		display: grid;

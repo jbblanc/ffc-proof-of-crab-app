@@ -32,11 +32,11 @@
 		{href}
 		{target}
 	>
-		{label}
 		<slot name="icon" />
 		{#if loading}
 			<span class:loading class:loading-spinner={loading} />
 		{/if}
+		{label}
 	</a>
 {:else}
 	<button
@@ -56,10 +56,10 @@
 		on:click
 		{disabled}
 	>
-		{label}
 		<slot name="icon" />
 		{#if loading}
 			<span class:loading class:loading-spinner={loading} />
 		{/if}
+		{label}
 	</button>
 {/if}
