@@ -23,7 +23,7 @@
 				<div>
 					<div class="flex items-center gap-3">
 						<div class="avatar">
-							<div class="mask mask-squircle h-12 w-12">
+							<div class="mask mask-squircle aspect-square h-12 w-12 object-cover">
 								<img src={crab.user?.pfp_url} alt="{crab.user?.username} profile picture" />
 							</div>
 						</div>
@@ -70,7 +70,7 @@
 						<td>
 							<div class="flex items-center gap-3">
 								<div class="avatar">
-									<div class="mask mask-squircle h-12 w-12">
+									<div class="mask mask-squircle aspect-square h-12 w-12 object-cover">
 										<img src={crab.user?.pfp_url} alt="{crab.user?.username} profile picture" />
 									</div>
 								</div>
