@@ -18,9 +18,14 @@
 			<div><SecurityLevel level={frame.security_level} /></div>
 		</div>
 		<div class="mt-5 flex">
+			<!--
+				<img loading="lazy" src="https://imagedelivery.net/BXluQx4ige9GuW0Ia56BHw/3ec38af9-aad1-40bd-9366-b34c4dda9900/rectcrop3" 
+				class="aspect-square shrink-0 rounded-full border object-cover bg-app border-default mr-2 md:mr-4" 
+				alt="Crab Labs avatar" style="width: 56px; height: 56px; min-width: 56px; min-height: 56px;">
+			-->
 			<div>
 				<img
-					class="rounded-badge"
+					class="rounded-badge aspect-square object-cover"
 					src={frame.account_user?.pfp_url}
 					width="100px"
 					height="100px"
@@ -109,7 +114,7 @@
 			</svelte:fragment>
 		</Button>
 	</div>
-	<div class="p-3 flex flex-col items-center">
+	<div class="flex flex-col items-center p-3">
 		<div>
 			<img src={phosphorItem?.media.image.thumb} alt="proof of crab" class="rounded-badge" />
 		</div>
