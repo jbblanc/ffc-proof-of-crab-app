@@ -19,7 +19,7 @@
 {#if $isPhone}
 	<div class="mt-5 flex flex-col space-y-2">
 		{#each crabs as crab, id}
-			<div class="grid grid-cols-2 rounded-md border border-opacity-60 p-2">
+			<div class="grid grid-cols-2 rounded-md border border-black border-opacity-50 p-2">
 				<div>
 					<div class="flex items-center gap-3">
 						<div class="avatar">
