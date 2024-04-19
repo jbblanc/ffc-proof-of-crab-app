@@ -8,7 +8,7 @@ This repository is associated to a farcaster frames application that can be acce
 
 Head to [Proof of Crab](https://ffc-proof-of-crab-app.vercel.app)
 
-This app uses a [Supabase](https://supabase.com/) backend and runs with [Vercel](https://vercel.com/).
+This app is built with [SvelteKit](https://kit.svelte.dev/), uses a [Supabase](https://supabase.com/) backend and runs with [Vercel](https://vercel.com/).
 
 ## Running locally
 
