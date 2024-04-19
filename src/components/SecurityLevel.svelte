@@ -1,5 +1,5 @@
 <script lang="ts">
-	export let level: number;
+	export let level = 2;
 </script>
 
 <div class="rating">

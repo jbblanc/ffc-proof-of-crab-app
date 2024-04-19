@@ -16,6 +16,20 @@ export async function getPocFrame(frameId: string): Promise<ProofOfCrabFrame> {
 	}
 }
 
+export async function getPocFrames(): Promise<ProofOfCrabFrame[]> {
+	let { data: poc_frame, error } = await getSupabaseClient()
+		.from('poc_frame')
+		.select(
+			'id,name,security_level,created_at,phosphor_proof_item_id, phosphor_proof_url, phosphor_organization_id, phosphor_proof_collection_id, account_fid, account_user'
+		) // ignore phosphor apikey here
+		.order('created_at', { ascending: false });
+	if (poc_frame) {
+		return poc_frame;
+	} else {
+		throw new Error(`No frame found`);
+	}
+}
+
 export async function getPocChallengesForFrame(frameId: string): Promise<ProofOfCrabChallenge[]> {
 	let { data: poc_frame_challenge, error } = await getSupabaseClient()
 		.from('poc_frame_challenge')

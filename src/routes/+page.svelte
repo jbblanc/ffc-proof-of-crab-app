@@ -18,12 +18,12 @@
 				Proof of Crab uses farcaster frames to check Proof of Humanity and deliver Soulbound Proof
 				tokens.
 			</p>
-			<div class="flex flex-col space-y-2 sm:flex-row sm:space-y-0 sm:space-x-2">
+			<div class="flex flex-col space-y-2 sm:flex-row sm:space-x-2 sm:space-y-0">
 				<Button
 					label="Get started in Warpcast !"
 					href="https://warpcast.com/~/compose?embeds[]={env.PUBLIC_FRAME_URL}/api"
 				/>
-				<Button style="secondary" label="Check crabs from genesis frame" href="/frames" />
+				<Button style="secondary" label="Checkout all Proof Of Crab frames!" href="/frames/all" />
 			</div>
 		</div>
 	</div>

@@ -1,7 +1,7 @@
 <script lang="ts">
 	import Button from '../../../../components/Button.svelte';
 	import type { ProofOfCrabFrame } from '../../../../domain/poc-frame';
-	import SecurityLevel from './SecurityLevel.svelte';
+	import SecurityLevel from '../../../../components/SecurityLevel.svelte';
 	import { env } from '$env/dynamic/public';
 
 	export let frame: ProofOfCrabFrame;

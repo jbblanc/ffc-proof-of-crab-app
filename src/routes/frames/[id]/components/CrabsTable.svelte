@@ -1,5 +1,4 @@
 <script lang="ts">
-	import { parse } from 'svelte/compiler';
 	import type { ProofOfCrabChallenge } from '../../../../domain/poc-challenge';
 	import BadgeStatus from './BadgeScore.svelte';
 	import { isPhone } from '../../../../stores/media';
@@ -18,7 +17,7 @@
 </div>
 {#if $isPhone}
 	<div class="mt-5 flex flex-col space-y-2">
-		{#each crabs as crab, id}
+		{#each crabs as crab (crab.id)}
 			<div class="grid grid-cols-2 rounded-md border border-black border-opacity-50 p-2">
 				<div>
 					<div class="flex items-center gap-3">
@@ -65,7 +64,7 @@
 				</tr>
 			</thead>
 			<tbody>
-				{#each crabs as crab, id}
+				{#each crabs as crab (crab.id)}
 					<tr>
 						<td>
 							<div class="flex items-center gap-3">
