@@ -1,7 +1,7 @@
 <script lang="ts">
 	import { isPhone } from '../../../../stores/media';
 	import type { ProofOfCrabFrame } from '../../../../domain/poc-frame';
-	import SecurityLevel from '../../../../components/SecurityLevel.svelte';
+	import SecurityLevelBis from '../../../../components/SecurityLevelBis.svelte';
 
 	export let frames: ProofOfCrabFrame[] = [];
 </script>
@@ -63,7 +63,7 @@
 							{frame.name}
 						</td>
 						<td>
-							<SecurityLevel />
+							<SecurityLevelBis />
 						</td>
 						<td>
 							<div class="flex items-center gap-3">
